@@ -45,3 +45,13 @@ ln -s $INSTALL_DIR/dunst/dunstrc $HOME/.config/dunst/dunstrc
 
 # Link .gitconfig file to home directory
 ln -s $INSTALL_DIR/.gitconfig $HOME/.gitconfig
+
+# Create default Folders (Documents, Dowloads, Pictures)
+cd $HOME
+folder_list=( "./Downloads" "./Documents" "./Pictures" )
+for value in "${folder_list[@]}"
+do
+	if [ ! -d $HOME"/"$value ]; then
+		mkdir $value
+	fi
+done
