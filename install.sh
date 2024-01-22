@@ -28,17 +28,20 @@ ln -s $INSTALL_DIR/dunst/dunstrc $HOME/.config/dunst/dunstrc
 #ln -s $INSTALL_DIR/.xinitrc $HOME/.xinitrc
 
 # Install and setup the Ly Display manager
-sudo apt install build-essential libpam0g-dev libxcb-xkb-dev
+#sudo apt install build-essential libpam0g-dev libxcb-xkb-dev
 
-if [ ! -d "$HOME/packages" ]; then
-	mkdir $HOME/packages
-fi
-cd $HOME/packages
+#if [ ! -d "$HOME/packages" ]; then
+#	mkdir $HOME/packages
+#fi
+#cd $HOME/packages
 
-git clone --recurse-submodules "https://github.com/fairyglade/ly.git"
+#git clone --recurse-submodules "https://github.com/fairyglade/ly.git"
 
-cd ly
-make
-sudo make install installsystemd
-sudo systemctl enable ly.service
-sudo systemctl disable getty@tty2.service
+#cd ly
+#make
+#sudo make install installsystemd
+#sudo systemctl enable ly.service
+#sudo systemctl disable getty@tty2.service
+
+# Link .gitconfig file to home directory
+ln -s $INSTALL_DIR/.gitconfig $HOME/.gitconfig
