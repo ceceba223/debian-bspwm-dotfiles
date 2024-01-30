@@ -2,12 +2,12 @@ format = """
 [](#7e8e50)\
 $python\
 $username\
-[](bg:#505050 fg:#7e8e50)\
+[](bg:#212121 fg:#7e8e50)\
 $directory\
-[](fg:#505050 bg:#4C566A)\
+[](fg:#212121 bg:#303030)\
 $git_branch\
 $git_status\
-[](fg:#4C566A bg:#7e8e50)\
+[](fg:#303030 bg:#7e8e50)\
 $c\
 $elixir\
 $elm\
@@ -32,7 +32,7 @@ style_root = "bg:#7e8e50"
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#505050"
+style = "bg:#212121"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -58,12 +58,12 @@ style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
-symbol = ""
-style = "bg:#4C566A"
+symbol = ""
+style = "bg:#303030"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#4C566A"
+style = "bg:#303030"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
